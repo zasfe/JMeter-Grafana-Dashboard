@@ -28,6 +28,18 @@ Once the containers are started successfully, navigate to [`http://localhost:300
 - Username: `admin`
 - Password: `admin`
 
+
+
+Force Delete `docker compose`
+
+```sh
+# `--rmi string` Remove images used by services. "local" remove only images that don't have a custom tag ("local"|"all"
+docker compose down --rmi local
+```
+
+
+
+
 #### Import Dashboards
 
 - Hover on the `+` symbol and select `Import` to import an existing Dashboard to the Grafana.
