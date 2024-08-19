@@ -17,7 +17,8 @@ services:
       - '3000:3000'
     volumes:
       - grafana_data:/var/lib/grafana
-
+      - ./grafana/dashboard.yaml:/etc/grafana/provisioning/dashboards/main.yaml
+      - ./grafana/dashboards:/var/lib/grafana/dashboards
 volumes:
   grafana_data: {}
   influxdb_data: {}
